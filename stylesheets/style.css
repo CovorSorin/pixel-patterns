@@ -1,0 +1,160 @@
+* {
+    font-family: 'Cousine', monospace;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container>div {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 60px !important;
+}
+
+.header p {
+    text-align: center;
+    font-size: 2em;
+}
+
+.container-app {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.right {}
+
+.right>div {
+    margin-top: 1.2em;
+}
+
+.container-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-color {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+.color-input {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.container-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.container-app>div {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 0.4em;
+    line-height: 1em;
+}
+
+button:hover {
+    background-color: #FAFAFA;
+}
+
+button:active {
+    background-color: #CCCCCC;
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type=number] {
+    padding: 6px;
+    display: inline-block;
+    background-color: #FAFAFA;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0.2em;
+    width: 6em;
+}
+
+a {
+    text-decoration: none;
+    color: #FF7921;
+    cursor: pointer;
+}

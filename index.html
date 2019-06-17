@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="covor, sorin, color, colour, colors, colours, pixel, patterns, pixel patterns, generator">
+    <meta name="author" content="Sorin Covor">
+
+    <title>Pixel Patterns</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122643386-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag()
+        {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-122643386-1');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Pixel Pattern Generator</p>
+        </div>
+
+        <div class="container-app">
+            <div class="left">
+                <canvas id='canvas'></canvas>
+            </div>
+
+            <div class="right" id="app">
+                <div class="container-colors">
+                    <template v-for="(color, index) in colors">
+                        <div class="container-color" v-bind:style="{ backgroundColor: colors[index] }">
+                            <input class="color-input" type="color" v-model="colors[index]">
+                        </div>
+                    </template>
+                </div>
+
+                <div>
+                    <label for="width">Width:</label>
+                    <input type="number" name="width" v-model="width">
+
+                    <label for="height">Height:</label>
+                    <input type="number" name="height" v-model="height">
+                </div>
+
+                <div>
+                    <button @click="removeColor">Remove</button>
+                    <button @click="addColor">Add</button>
+                    <button @click="generate">Generate</button>
+                    <button @click="refresh">Refresh</button>
+                </div>
+
+                <div style="margin-top: 4em;">
+                    <p><u>Generate</u>: Creates new patterns with new random colors.</p>
+                    <p><u>Refresh</u>: Generates a new pattern with the current colors.</p>
+                    <p>The current colors can be changed by clicking on them.</p>
+                    <p><u>Download</u>: Right-click the image and select "Save image as...".</p>
+                    <a href="https://covorsorin.github.io/">My Website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
