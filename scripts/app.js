@@ -67,6 +67,12 @@ function generatePattern()
     canvas.style.width = (40 * width / max) + 'vw';
     canvas.style.height = (40 * height / max) + 'vw';
 
+    if (window.innerWidth < 640)
+    {
+        canvas.style.width = (95 * width / max) + 'vw';
+        canvas.style.height = (95 * height / max) + 'vw';
+    }
+
     context.fillStyle = app.colors[0];
     context.fillRect(0, 0, width, height);
 
