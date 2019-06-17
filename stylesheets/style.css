@@ -73,16 +73,24 @@ canvas {
     margin-top: 1.2em;
 }
 
+.center-vertically {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .container-colors {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -102,6 +110,15 @@ canvas {
     margin: 0;
     opacity: 0;
     cursor: pointer;
+}
+
+.color-hex {
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #CCCCCC;
+    border-radius: 6px;
+    text-transform: uppercase;
 }
 
 .container-app {
@@ -159,7 +176,7 @@ a {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .container-app {
         display: inline-block;
         width: 100%;

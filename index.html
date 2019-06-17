@@ -40,8 +40,11 @@
             <div class="right" id="app">
                 <div class="container-colors">
                     <template v-for="(color, index) in colors">
-                        <div class="container-color" v-bind:style="{ backgroundColor: colors[index] }">
-                            <input class="color-input" type="color" v-model="colors[index]">
+                        <div class="center-vertically">
+                            <div class="container-color" v-bind:style="{ backgroundColor: colors[index] }">
+                                <input class="color-input" type="color" v-model="colors[index]">
+                            </div>
+                            <input type="text" v-model="colors[index]" class="color-hex">
                         </div>
                     </template>
                 </div>
