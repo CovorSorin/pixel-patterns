@@ -34,7 +34,7 @@ canvas {
     height: 100%;
 }
 
-.container>div {
+.container > div {
     width: 100%;
     height: 100%;
 }
@@ -42,6 +42,7 @@ canvas {
 .header {
     width: 100%;
     height: 60px !important;
+    margin-top: 20px;
 }
 
 .header p {
@@ -67,9 +68,7 @@ canvas {
     justify-content: center;
 }
 
-.right {}
-
-.right>div {
+.right > div {
     margin-top: 1.2em;
 }
 
@@ -133,7 +132,7 @@ canvas {
     height: 100%;
 }
 
-.container-app>div {
+.container-app > div {
     width: 100%;
     height: 100%;
 }
@@ -176,15 +175,28 @@ a {
     cursor: pointer;
 }
 
+.new-version {
+    position: absolute;
+    background-color: rgb(255 217 33);
+    padding: 12px;
+    width: 100%;
+}
+
+.new-version a {
+    color: red !important;
+}
+
 @media only screen and (max-width: 640px) {
     .container-app {
         display: inline-block;
         width: 100%;
     }
+
     .left {
         height: auto !important;
         margin-top: 2em;
     }
+
     .right {
         padding: 1.2em;
     }
